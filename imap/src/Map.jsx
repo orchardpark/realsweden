@@ -9,7 +9,7 @@ export default function MapChart() {
         <ComposableMap
             projection="geoMercator"
             projectionConfig={{
-                center: [15,58],
+                center: [17,58],
                 scale: 680
             }}
         >
