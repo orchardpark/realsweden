@@ -2,11 +2,18 @@ import React from "react"
 import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 
 const geoUrl =
-    "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json"
+    "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/sweden/sweden-municipalities.json"
 
 export default function MapChart() {
     return (
-        <ComposableMap>
+        <ComposableMap
+            projection="geoMercator"
+            projectionConfig={{
+                center: [15,58],
+                scale: 680
+            }}
+        >
+
             <Geographies geography={geoUrl}>
                 {({ geographies }) =>
                     geographies.map((geo) => (
