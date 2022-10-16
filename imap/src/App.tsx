@@ -4,6 +4,7 @@ import MapChart from "./Map";
 import Container from 'react-bootstrap/Container';
 import {Col, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PriceChart from "./price-chart";
 
 function App() {
     return (
@@ -18,12 +19,10 @@ function App() {
                     <Col>
                         {MapChart()}
                     </Col>
-                    <Col xs lg="2">
-                        <div>
-                            <p>
-                                Hello world!
-                            </p>
-                        </div>
+                    <Col xs lg="4">
+                        <Row>
+                            {PriceChart()}
+                        </Row>
                     </Col>
                 </Row>
             </Container>
