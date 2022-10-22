@@ -5,7 +5,12 @@ import Container from 'react-bootstrap/Container';
 import {Col, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PriceChart from "./price-chart";
+/*
+TODO Find a way to enter data into kommuns
+TODO Load kommun data from database
+TODO Add indicators
 
+ */
 function App() {
     return (
         <div className="App">
